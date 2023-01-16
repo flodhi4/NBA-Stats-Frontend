@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin-top: 55px;
+    }
+    .topnav {
+      background-color: black;
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-bottom: 3px solid grey;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      border-bottom: 3px solid white;
+    }
+    .topnav a.active {
+      border-bottom: 3px solid white;
+    }
+    .container {
+      width: 0px;
+      display: flex;
+    }
+
+    .container img {
+      width: 800px;
+      height: 500px;
+      margin-right: 15px;
+    }
+
+    .bottomnav {
+      margin-top: 5px;
+      background-color: rgb(22, 22, 46);
+    }
+
+    .bottomnav a {
+      color: black;
+      opacity: 0.6;
+    }
+
+    .bottomnav a:hover {
+      opacity: 0.5;
+    }
+
+    .bannertext {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      font-size: xxx-large;
+      white-space: nowrap;
+      margin-top: 15px;
+    }
+
+    .bannerbody {
+      margin-top: 50px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: large;
+    }
+
+    .awards {
+      padding-top: 10px;
+    }
+
+    .statbanner {
+      width: 1300px;
+      height: 25px;
+      text-align: center;
+      align-items: center;
+      background-color: black;
+      color: white;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: x-large;
+      border-bottom: 5px solid white;
+    }
+
+    .leaders {
+      width: 1300px;
+      background-color: rgb(22, 22, 46);
+      color: white;
+    }
+
+    .row img {
+      border-radius: 50%;
+      width: 150px;
+      height: 100px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .column {
+      flex: 33.33%;
+      padding: 1px;
+      width: 150px;
+    }
+
+    .coltext {
+      width: 150px;
+      text-align: center;
+    }
+
+    .stattext {
+      width: 150px;
+      text-align: center;
+    }
+  </style>
+  <body style="background-color: white">
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="shooting.html">Shooting</a>
+      <a href="defense.html">Defense</a>
+      <a href="passing.html">Passing</a>
+      <a href="hustle.html">Hustle</a>
+      <a href="standings.html">Standings</a>
+    </div>
+    <div
+      class="header"
+      style="
+        color: white;
+        background-color: rgb(22, 22, 46);
+        height: 50px;
+        padding-top: 7px;
+        padding-left: 5px;
+        font-size: xx-large;
+        font-family: Arial, Arial Black, sans-serif;
+        border-bottom: 3px solid white;
+      "
+    >
+      NBA Stats
+    </div>
+    <div class="container">
+      <div class="image">
+        <img
+          src="Web-banner.png"
+          alt="Image to align"
+          style="border: 3px solid black"
+          ;
+        />
+      </div>
+      <div class="bannertext">
+        2021-22 NBA Season
+        <div class="bannerbody">
+          Jokic wins back-to-back MVPs.
+          <br />
+          <br />
+          Golden Warriors capture 4th championship in 8 years.
+          <br />
+          <br />
+          Marcus Smart named DPOY.
+          <br />
+          <br />
+          Ja Morant wins MIP.
+          <br />
+          <br />
+          Scottie Barnes takes home the ROTY award.
+          <br />
+          <br />
+          <h4>Relive the 2021-22 NBA Season!</h4>
+          <div class="awards">
+            <a href="https://www.nba.com/awards/2022">
+              <button style="width: 200px; height: 50px; font-size: large">
+                2021-22 awards
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="statbanner">Stat Leaders '21-22'</div>
+    <div class="row">
+      <div class="column">
+        <img src="embiid.png" alt="Embiid" />
+        <div class="coltext">J. Embiid</div>
+        <div class="stattext"><b>30.6 PTS</b></div>
+      </div>
+      <div class="column">
+        <img src="paul.png" alt="Paul" />
+        <div class="coltext">C. Paul</div>
+        <div class="stattext"><b>10.8 AST</b></div>
+      </div>
+      <div class="column">
+        <img src="gobert.png" alt="Gobert" />
+        <div class="coltext">R. Gobert</div>
+        <div class="stattext"><b>14.7 REB</b></div>
+      </div>
+      <div class="column">
+        <img src="dejounte.png" alt="dejounte" />
+        <div class="coltext">D. Murray</div>
+        <div class="stattext"><b>2.3 STL</b></div>
+      </div>
+      <div class="column">
+        <img src="jaren.png" alt="jaren" />
+        <div class="coltext">J. Jackson Jr.</div>
+        <div class="stattext"><b>2.3 BLK</b></div>
+      </div>
+    </div>
+    <div class="bottomnav">
+      <a href="shooting.html">
+        <img
+          src="curry-shooting-record.jpg"
+          alt="Image of Curry"
+          width="246px"
+          height="150px"
+        />
+      </a>
+      <a href="defense.html">
+        <img
+          src="smart.jpg"
+          alt="Image of Smart"
+          width="246px"
+          height="150px"
+        />
+      </a>
+      <a href="passing.html">
+        <img
+          src="jokic.jpg"
+          alt="Image of Jokic"
+          width="246px"
+          height="150px"
+        />
+      </a>
+      <a href="hustle.html">
+        <img
+          src="dejounte.jpeg"
+          alt="Image of Dejounte"
+          width="246px"
+          height="150px"
+        />
+      </a>
+      <a href="standings.html">
+        <img src="suns.jpg" alt="Image of Suns" width="247px" height="150px" />
+      </a>
+    </div>
+  </body>
+</html>
